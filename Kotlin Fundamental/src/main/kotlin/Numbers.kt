@@ -4,13 +4,13 @@ fun main(){
     val tinggi = 10
     val volume : Double
 
-    val p = panjang.toInt() + 2
+    val p = panjang.toDouble() + 2
     val l = lebar
     val t = tinggi.toInt() + 1
     println("Volume dari balok yang mempunyai panjang $p, lebar $l, dan tinggi $t ini adalah ${hitungVolume(p, l, t)}")
 }
 
-fun hitungVolume(p : Int, l : Double, t : Int) : Float
+fun hitungVolume(p : Double, l : Double, t : Double) : Float
 {
     val v = p * l * t
     return v.toFloat()
